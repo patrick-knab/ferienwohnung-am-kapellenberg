@@ -13,10 +13,8 @@
     <meta property="og:url" content="https://ferienwohnung-am-kapellenberg.de/tips.html">
     <meta property="og:title" content="Ausflugstipps | Natur & Erholung am Kapellenberg">
     <meta property="og:description" content="Premiumwandern und Schwarzwald-Erlebnisse direkt vor Ihrer Haustür.">
-    <meta property="og:image" content="./images/k-20240224_152809.jpg">
+    <meta property="og:image" content="/images/k-20240224_152809.jpg">
 
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="./src/main.css">
 </head>
 
@@ -45,9 +43,9 @@
                 <span>|</span>
                 <span class="lang-btn" data-lang="en">EN</span>
             </div>
-            <a href="mailto:info@ferienwohnung-am-kapellenberg.de" class="btn">
-                <span data-de="Jetzt Buchen">Jetzt Buchen</span>
-                <span data-en="Book Now">Book Now</span>
+            <a href="./index.html#contact" class="btn">
+                <span data-de="Verfügbarkeit anfragen">Verfügbarkeit anfragen</span>
+                <span data-en="Check availability">Check availability</span>
             </a>
         </div>
     </header>
@@ -56,7 +54,7 @@
         <!-- Title Section -->
         <section class="subpage-hero">
             <div class="hero-background"
-                style="background-image: url('./images/background_BF.png'); opacity: 0.15;"></div>
+                style="background-image: url('/images/background_BF.png'); opacity: 0.15;"></div>
             <div class="container" style="position: relative; z-index: 2;">
                 <span class="section-subtitle"
                     style="color: var(--color-secondary); animation: fadeInUp 0.8s ease backwards;">
@@ -117,18 +115,16 @@
                                 the wilderness of tomorrow.</span>
                         </p>
                         <div style="margin-top: 40px;">
-                            <a href="https://www.nationalpark-schwarzwald.de" class="btn btn-outline"
+                            <a href="https://www.nationalpark-schwarzwald.de/" class="btn btn-outline" target="_blank" rel="noopener noreferrer"
                                 style="border-color: var(--color-primary); color: var(--color-primary);">
                                 <span data-de="Zur Nationalpark-Website">Zur Nationalpark-Website</span>
                                 <span data-en="To National Park Website">To National Park Website</span>
                             </a>
                         </div>
                     </div>
-                    <div class="reveal"
-                        style="border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-lg);">
-                        <img src="./images/blackl_forest.png" alt="Nationalpark Schwarzwald Impression"
-                            style="width: 100%; height: auto; display: block; transition: var(--transition-smooth);"
-                            class="hover-zoom">
+                    <div class="card reveal" style="align-self: center;">
+                        <h3 style="margin-bottom: 15px;"><span data-de="Aktuelle Informationen">Aktuelle Informationen</span><span data-en="Current information">Current information</span></h3>
+                        <p><span data-de="Wege, Veranstaltungen und Hinweise können sich kurzfristig ändern. Bitte prüfen Sie vor Ihrem Besuch die Informationen des Nationalparks.">Wege, Veranstaltungen und Hinweise können sich kurzfristig ändern. Bitte prüfen Sie vor Ihrem Besuch die Informationen des Nationalparks.</span><span data-en="Trails, events and notices can change at short notice. Please check the National Park's information before your visit.">Trails, events and notices can change at short notice. Please check the National Park's information before your visit.</span></p>
                     </div>
                 </div>
             </div>
@@ -150,21 +146,16 @@
                     <!-- Trail 1 -->
                     <a href="./wiesensteig.html" class="card card-with-image reveal"
                         style="text-decoration: none; color: inherit;">
-                        <div class="card-image-wrapper">
-                            <img src="./images/tips/wiesensteig.jpg" alt="Griesbacher Wiesensteig"
-                                class="card-image">
-
-                        </div>
                         <div class="card-content">
                             <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Griesbacher Wiesensteig</h3>
                             <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 25px;">
                                 <span
-                                    data-de="Auf 11 km durch die wildromantische Schlucht der Wilden Rench. Naturbelassene Pfade, Waldwiesen und herrliche Ausblicke.">Auf
-                                    11 km durch die wildromantische Schlucht der Wilden Rench. Naturbelassene Pfade,
+                                    data-de="Auf 13,5 km durch die wildromantische Landschaft der Wilden Rench. Naturbelassene Pfade, Waldwiesen und herrliche Ausblicke.">Auf
+                                    13,5 km durch die wildromantische Landschaft der Wilden Rench. Naturbelassene Pfade,
                                     Waldwiesen und herrliche Ausblicke.</span>
                                 <span
-                                    data-en="Along 11 km through the wild and romantic gorge of the Wilde Rench. Natural paths, forest meadows, and magnificent views.">Along
-                                    11 km through the wild and romantic gorge of the Wilde Rench. Natural paths, forest
+                                    data-en="Over 13.5 km through the wild and romantic landscape of the Wilde Rench. Natural paths, forest meadows, and magnificent views.">Over
+                                    13.5 km through the wild and romantic landscape of the Wilde Rench. Natural paths, forest
                                     meadows, and magnificent views.</span>
                             </p>
                             <p style="font-size: 0.85rem; font-weight: 600; color: var(--color-primary);">
@@ -179,11 +170,6 @@
                     <!-- Trail 2 -->
                     <a href="./schwarzwaldsteig.html" class="card card-with-image reveal"
                         style="text-decoration: none; color: inherit;">
-                        <div class="card-image-wrapper">
-                            <img src="./images/tips/schwarzwaldsteig.jpg" alt="Peterstaler Schwarzwaldsteig"
-                                class="card-image">
-
-                        </div>
                         <div class="card-content">
                             <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Peterstaler Schwarzwaldsteig</h3>
                             <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 25px;">
@@ -209,10 +195,6 @@
                     <!-- Trail 3 -->
                     <a href="./himmelssteig.html" class="card card-with-image reveal"
                         style="text-decoration: none; color: inherit;">
-                        <div class="card-image-wrapper">
-                            <img src="./images/tips/himmelssteig.jpg" alt="Himmelssteig" class="card-image">
-
-                        </div>
                         <div class="card-content">
                             <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Himmelssteig</h3>
                             <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 25px;">
@@ -233,11 +215,6 @@
                     <!-- Trail 5 -->
                     <a href="./teufelskanzelsteig.html" class="card card-with-image reveal"
                         style="text-decoration: none; color: inherit;">
-                        <div class="card-image-wrapper">
-                            <img src="./images/tips/teufelskanzelsteig.jpg" alt="Teufelskanzelsteig"
-                                class="card-image">
-
-                        </div>
                         <div class="card-content">
                             <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Teufelskanzelsteig</h3>
                             <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 25px;">
@@ -261,19 +238,15 @@
                     <!-- Trail 4 -->
                     <a href="./sinfoniesteig.html" class="card card-with-image reveal"
                         style="text-decoration: none; color: inherit;">
-                        <div class="card-image-wrapper">
-                            <img src="./images/tips/sinfoniesteig.jpg" alt="Sinfoniesteig" class="card-image">
-
-                        </div>
                         <div class="card-content">
                             <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Sinfoniesteig</h3>
                             <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 25px;">
                                 <span
-                                    data-de="36 km geballtes Wandervergnügen. Vereint die Highlights aller Wege auf zwei Tagesetappen.">36
-                                    km geballtes Wandervergnügen. Vereint die Highlights aller Wege auf zwei
+                                    data-de="35,7 km Wandervergnügen. Vereint die Highlights aller Wege auf zwei Tagesetappen.">35,7
+                                    km Wandervergnügen. Vereint die Highlights aller Wege auf zwei
                                     Tagesetappen.</span>
                                 <span
-                                    data-en="36 km of pure hiking pleasure. Combines the highlights of all trails into two daily stages.">36
+                                    data-en="35.7 km of pure hiking pleasure. Combines the highlights of all trails into two daily stages.">35.7
                                     km of pure hiking pleasure. Combines the highlights of all trails into two daily
                                     stages.</span>
                             </p>
@@ -330,10 +303,6 @@
                 <div class="grid grid-3" style="margin-top: 60px;">
                     <!-- Europa-Park -->
                     <div class="card card-with-image reveal">
-                        <div class="card-image-wrapper">
-                            <img src="./images/tips/epark.jpg" alt="Europa-Park" class="card-image">
-
-                        </div>
                         <div class="card-content">
                             <h3 style="margin-bottom: 15px;">Europa-Park & Rulantica</h3>
                             <p style="font-size: 0.95rem; color: var(--color-text-muted);">
@@ -353,10 +322,6 @@
 
                     <!-- Wine Region -->
                     <div class="card card-with-image reveal">
-                        <div class="card-image-wrapper">
-                            <img src="./images/tips/weinregion.jpg" alt="Weinregion Ortenau" class="card-image">
-
-                        </div>
                         <div class="card-content">
                             <h3 style="margin-bottom: 15px;">
                                 <span data-de="Weinregion Ortenau">Weinregion Ortenau</span>
@@ -364,118 +329,74 @@
                             </h3>
                             <p style="font-size: 0.95rem; color: var(--color-text-muted);">
                                 <span
-                                    data-de="Besuchen Sie die Oberkircher Winzer oder regionale Ölmühlen für authentische Schwarzwälder Genussmomente.">Besuchen
-                                    Sie die Oberkircher Winzer oder regionale Ölmühlen für authentische Schwarzwälder
-                                    Genussmomente.</span>
+                                    data-de="Weinliebhaber und Einsteiger erhalten hier einen Einblick in das moderne Ambiente der Winzergenossenschaft Oberkircher Winzer – mit der Möglichkeit einer Genussverkostung.">Weinliebhaber und Einsteiger erhalten hier einen Einblick in das moderne Ambiente der Winzergenossenschaft Oberkircher Winzer – mit der Möglichkeit einer Genussverkostung.</span>
                                 <span
-                                    data-en="Visit the Oberkirch winemakers or regional oil mills for authentic Black Forest moments of pleasure.">Visit
-                                    the Oberkirch winemakers or regional oil mills for authentic Black Forest moments of
-                                    pleasure.</span>
+                                    data-en="Wine lovers and newcomers can experience the modern atmosphere of the Oberkirch winegrowers' cooperative, including the opportunity for a tasting.">Wine lovers and newcomers can experience the modern atmosphere of the Oberkirch winegrowers' cooperative, including the opportunity for a tasting.</span>
                             </p>
                         </div>
                     </div>
 
                     <!-- Allerheiligen -->
                     <div class="card card-with-image reveal">
-                        <div class="card-image-wrapper">
-                            <img src="./images/tips/allerheiligen.jpg" alt="Allerheiligen Wasserfälle"
-                                class="card-image">
-
-                        </div>
                         <div class="card-content">
                             <h3 style="margin-bottom: 15px;">Allerheiligen Wasserfälle</h3>
                             <p style="font-size: 0.95rem; color: var(--color-text-muted);">
                                 <span
-                                    data-de="Die höchsten natürlichen Wasserfälle des Nordschwarzwalds mit beeindruckenden Klosterruinen.">Die
-                                    höchsten natürlichen Wasserfälle des Nordschwarzwalds mit beeindruckenden
-                                    Klosterruinen.</span>
+                                    data-de="Die höchsten natürlichen Wasserfälle des Nordschwarzwalds stürzen über sieben Kaskaden durch eine Schlucht hinab. Direkt daneben liegen die beeindruckenden Klosterruinen Allerheiligen.">Die höchsten natürlichen Wasserfälle des Nordschwarzwalds stürzen über sieben Kaskaden durch eine Schlucht hinab. Direkt daneben liegen die beeindruckenden Klosterruinen Allerheiligen.</span>
                                 <span
-                                    data-en="The highest natural waterfalls in the Northern Black Forest with impressive monastery ruins.">The
-                                    highest natural waterfalls in the Northern Black Forest with impressive monastery
-                                    ruins.</span>
+                                    data-en="The highest natural waterfalls in the northern Black Forest cascade down a gorge in seven stages. Right beside them are the impressive ruins of Allerheiligen Abbey.">The highest natural waterfalls in the northern Black Forest cascade down a gorge in seven stages. Right beside them are the impressive ruins of Allerheiligen Abbey.</span>
                             </p>
                         </div>
                     </div>
 
-                    <!-- Burg Hohenzollern -->
+                    <!-- Mummelsee -->
                     <div class="card card-with-image reveal">
-                        <div class="card-image-wrapper">
-                            <img src="./images/tips/hohenzollern.jpg" alt="Burg Hohenzollern" class="card-image">
-
-                        </div>
                         <div class="card-content">
-                            <h3 style="margin-bottom: 15px;">Burg Hohenzollern</h3>
+                            <h3 style="margin-bottom: 15px;">Mummelsee</h3>
                             <p style="font-size: 0.95rem; color: var(--color-text-muted);">
                                 <span
-                                    data-de="Eine der am meisten besuchten Burgen Europas. Majestätischer Blick über die schwäbische Alb.">Eine
-                                    der am meisten besuchten Burgen Europas. Majestätischer Blick über die schwäbische
-                                    Alb.</span>
+                                    data-de="Direkt an der Schwarzwaldhochstraße auf 1.036 m Höhe liegt der berühmte Karsee – ideal für eine Seerunde oder eine kleine Tretbootfahrt.">Direkt an der Schwarzwaldhochstraße auf 1.036 m Höhe liegt der berühmte Karsee – ideal für eine Seerunde oder eine kleine Tretbootfahrt.</span>
                                 <span
-                                    data-en="One of the most visited castles in Europe. Majestic view over the Swabian Alb.">One
-                                    of the most visited castles in Europe. Majestic view over the Swabian Alb.</span>
+                                    data-en="At an altitude of 1,036 m directly on the Black Forest High Road lies the famous glacial lake – ideal for a walk around the lake or a short pedal-boat ride.">At an altitude of 1,036 m directly on the Black Forest High Road lies the famous glacial lake – ideal for a walk around the lake or a short pedal-boat ride.</span>
                             </p>
                         </div>
                     </div>
 
                     <!-- Hornisgrinde -->
                     <div class="card card-with-image reveal">
-                        <div class="card-image-wrapper">
-                            <img src="./images/tips/hornisgrinde.jpg" alt="Die Hornisgrinde" class="card-image">
-
-                        </div>
                         <div class="card-content">
                             <h3 style="margin-bottom: 15px;">Die Hornisgrinde</h3>
                             <p style="font-size: 0.95rem; color: var(--color-text-muted);">
                                 <span
-                                    data-de="Der höchste Berg des Nordschwarzwalds bietet ein einzigartiges Hochmoorgebiet und Rundumblick.">Der
-                                    höchste Berg des Nordschwarzwalds bietet ein einzigartiges Hochmoorgebiet und
-                                    Rundumblick.</span>
+                                    data-de="Die Hornisgrinde ist mit 1.163 m der höchste Berg des Nordschwarzwaldes. Ihr Plateau ist von einem mehrere Tausend Jahre alten Hochmoor geprägt und bietet herrliche Panoramablicke sowie gut ausgebaute Wanderwege.">Die Hornisgrinde ist mit 1.163 m der höchste Berg des Nordschwarzwaldes. Ihr Plateau ist von einem mehrere Tausend Jahre alten Hochmoor geprägt und bietet herrliche Panoramablicke sowie gut ausgebaute Wanderwege.</span>
                                 <span
-                                    data-en="The highest mountain in the Northern Black Forest offers a unique high moor area and panoramic views.">The
-                                    highest mountain in the Northern Black Forest offers a unique high moor area and
-                                    panoramic views.</span>
+                                    data-en="At 1,163 m, the Hornisgrinde is the highest mountain in the northern Black Forest. Its plateau is shaped by a high moor thousands of years old, with panoramic views and well-developed hiking trails.">At 1,163 m, the Hornisgrinde is the highest mountain in the northern Black Forest. Its plateau is shaped by a high moor thousands of years old, with panoramic views and well-developed hiking trails.</span>
                             </p>
                         </div>
                     </div>
 
-                    <!-- Feldberg -->
+                    <!-- Freudenstadt -->
                     <div class="card card-with-image reveal">
-                        <div class="card-image-wrapper">
-                            <img src="./images/tips/feldberg.jpg" alt="Der Feldberg" class="card-image">
-
-                        </div>
                         <div class="card-content">
-                            <h3 style="margin-bottom: 15px;">Der Feldberg</h3>
+                            <h3 style="margin-bottom: 15px;">Freudenstadt</h3>
                             <p style="font-size: 0.95rem; color: var(--color-text-muted);">
                                 <span
-                                    data-de="Mit 1493m der höchste Gipfel im Schwarzwald. Ein Paradies für Wanderer und Wintersportler.">Mit
-                                    1493m der höchste Gipfel im Schwarzwald. Ein Paradies für Wanderer und
-                                    Wintersportler.</span>
+                                    data-de="Freudenstadt besitzt den größten Marktplatz Deutschlands und ist von historischen Arkadengängen gesäumt, die zum Flanieren, Einkaufen und Verweilen einladen.">Freudenstadt besitzt den größten Marktplatz Deutschlands und ist von historischen Arkadengängen gesäumt, die zum Flanieren, Einkaufen und Verweilen einladen.</span>
                                 <span
-                                    data-en="At 1493m, the highest peak in the Black Forest. A paradise for hikers and winter sports enthusiasts.">At
-                                    1493m, the highest peak in the Black Forest. A paradise for hikers and winter sports
-                                    enthusiasts.</span>
+                                    data-en="Freudenstadt has Germany's largest market square and historic arcades inviting visitors to stroll, shop and linger.">Freudenstadt has Germany's largest market square and historic arcades inviting visitors to stroll, shop and linger.</span>
                             </p>
                         </div>
                     </div>
 
-                    <!-- Panoramabad -->
+                    <!-- Gengenbach -->
                     <div class="card card-with-image reveal">
-                        <div class="card-image-wrapper">
-                            <img src="./images/tips/water.png" alt="Panoramabad" class="card-image">
-
-                        </div>
                         <div class="card-content">
-                            <h3 style="margin-bottom: 15px;">Panoramabad</h3>
+                            <h3 style="margin-bottom: 15px;">Gengenbach</h3>
                             <p style="font-size: 0.95rem; color: var(--color-text-muted);">
                                 <span
-                                    data-de="Das Panoramabad Freudenstadt bietet Entspannung und Badespaß pur, nur eine kurze Fahrt entfernt.">Das
-                                    Panoramabad Freudenstadt bietet Entspannung und Badespaß pur, nur eine kurze Fahrt
-                                    entfernt.</span>
+                                    data-de="Die Stadt bietet ein hervorragend erhaltenes historisches Stadtbild mit Fachwerkhäusern, Stadttoren und mittelalterlichen Gassen.">Die Stadt bietet ein hervorragend erhaltenes historisches Stadtbild mit Fachwerkhäusern, Stadttoren und mittelalterlichen Gassen.</span>
                                 <span
-                                    data-en="The Panoramabad Freudenstadt offers pure relaxation and swimming fun, just a short drive away.">The
-                                    Panoramabad Freudenstadt offers pure relaxation and swimming fun, just a short drive
-                                    away.</span>
+                                    data-en="The town has an exceptionally well-preserved historic centre with half-timbered houses, city gates and medieval lanes.">The town has an exceptionally well-preserved historic centre with half-timbered houses, city gates and medieval lanes.</span>
                             </p>
                         </div>
                     </div>
@@ -534,17 +455,17 @@
                         <span data-en="Discover">Discover</span>
                     </h4>
                     <ul style="list-style: none;">
-                        <li style="margin-bottom: 12px;"><a href="http://www.schwarzwald-nationalpark.de/"
-                               
+                        <li style="margin-bottom: 12px;"><a href="https://www.nationalpark-schwarzwald.de/"
+                                target="_blank" rel="noopener noreferrer"
                                 style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">
                                 <span data-de="Nationalpark">Nationalpark</span>
                                 <span data-en="National Park">National Park</span>
                             </a></li>
-                        <li style="margin-bottom: 12px;"><a href="https://www.bad-peterstal-griesbach.de/"
-                               
+                        <li style="margin-bottom: 12px;"><a href="https://pages.et4.de/de/bad-peterstal-griesbach/wlan/portal?terminal=Touristinfo"
+                                target="_blank" rel="noopener noreferrer"
                                 style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">
-                                <span data-de="Tourist-Info">Tourist Info</span>
-                                <span data-en="Tourist Info">Tourist Info</span>
+                                <span data-de="Urlaubskompass">Urlaubskompass</span>
+                                <span data-en="Holiday Compass">Holiday Compass</span>
                             </a></li>
                     </ul>
                 </div>
@@ -569,7 +490,7 @@
         </div>
     </footer>
 
-    <script src="./src/main.js" type="module"></script>
+    <script src="/src/main.js" type="module"></script>
 </body>
 
 </html>

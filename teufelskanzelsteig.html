@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teufelskanzelsteig | Ferienwohnung am Kapellenberg</title>
     <link rel="stylesheet" href="./src/main.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         .trail-hero {
             height: 60vh;
@@ -129,8 +128,6 @@
 
     <main>
         <section class="trail-hero">
-            <div class="trail-hero-bg" style="background-image: url('./images/tips/teufelskanzelsteig.jpg');">
-            </div>
             <div class="trail-hero-content">
                 <span class="section-subtitle"
                     style="color: rgba(255,255,255,0.9); margin-bottom: 10px; display: block;">
@@ -155,17 +152,17 @@
             <div class="container">
                 <div class="trail-stats">
                     <div class="stat-card">
-                        <span class="stat-value">7 km</span>
+                        <span class="stat-value">7,1 km</span>
                         <span class="stat-label"><span data-de="Länge">Länge</span><span
                                 data-en="Length">Length</span></span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-value">~ 3 h</span>
+                        <span class="stat-value">~ 2:40 h</span>
                         <span class="stat-label"><span data-de="Dauer">Dauer</span><span
                                 data-en="Duration">Duration</span></span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-value">400 m</span>
+                        <span class="stat-value">427 m</span>
                         <span class="stat-label"><span data-de="Aufstieg">Aufstieg</span><span
                                 data-en="Ascent">Ascent</span></span>
                     </div>
@@ -190,17 +187,9 @@
                         <div class="rich-text">
                             <p style="margin-bottom: 16px;">
                                 <span
-                                    data-de="Der Teufelskanzelsteig in Bad Peterstal-Griesbach ist eine Tour für Abenteurer. Herrliche Ausblicke, imposante Gesteinsformationen und versteckte Kraftorte, ein Wasserfall in ursprünglicher Natur – auf dieser knapp 7 Kilometer langen Tour gibt es einiges zu entdecken.">Der
-                                    Teufelskanzelsteig in Bad Peterstal-Griesbach ist eine Tour für Abenteurer.
-                                    Herrliche Ausblicke, imposante Gesteinsformationen und versteckte Kraftorte, ein
-                                    Wasserfall in ursprünglicher Natur – auf dieser knapp 7 Kilometer langen Tour gibt
-                                    es einiges zu entdecken.</span>
+                                    data-de="Der Teufelskanzelsteig beginnt an der Sommerschanze oberhalb von Bad Griesbach und ist die richtige Wahl für trittsichere Entdecker. Gleich zu Beginn führt er am Griesbacher Wasserfall über moosige Stufen bergauf, später über schmale Pfade und Treppen zur markanten Teufelskanzel. An der Sexauer Hütte gibt es einen Brunnen zum Auffüllen der Wasserflasche; festes Schuhwerk ist besonders bei Nässe wichtig.">Der Teufelskanzelsteig beginnt an der Sommerschanze oberhalb von Bad Griesbach und ist die richtige Wahl für trittsichere Entdecker. Gleich zu Beginn führt er am Griesbacher Wasserfall über moosige Stufen bergauf, später über schmale Pfade und Treppen zur markanten Teufelskanzel. An der Sexauer Hütte gibt es einen Brunnen zum Auffüllen der Wasserflasche; festes Schuhwerk ist besonders bei Nässe wichtig.</span>
                                 <span
-                                    data-en="The Teufelskanzelsteig in Bad Peterstal-Griesbach is a tour for adventurers. Magnificent views, impressive rock formations, hidden places of power, and a waterfall in pristine nature – there is much to discover on this tour of just under 7 kilometers.">The
-                                    Teufelskanzelsteig in Bad Peterstal-Griesbach is a tour for adventurers. Magnificent
-                                    views, impressive rock formations, hidden places of power, and a waterfall in
-                                    pristine nature – there is much to discover on this tour of just under 7
-                                    kilometers.</span>
+                                    data-en="The Teufelskanzelsteig begins at the summer ski jump above Bad Griesbach and suits sure-footed explorers. It starts by climbing moss-covered steps beside the Griesbach waterfall, then continues on narrow paths and stairs to the striking Teufelskanzel rock formation. There is a spring at the Sexauer Hut to refill water bottles; sturdy footwear is particularly important in wet conditions.">The Teufelskanzelsteig begins at the summer ski jump above Bad Griesbach and suits sure-footed explorers. It starts by climbing moss-covered steps beside the Griesbach waterfall, then continues on narrow paths and stairs to the striking Teufelskanzel rock formation. There is a spring at the Sexauer Hut to refill water bottles; sturdy footwear is particularly important in wet conditions.</span>
                             </p>
                         </div>
                     </div>
@@ -236,9 +225,10 @@
 
                 <h2 style="text-align: center; margin-bottom: 30px;"><span data-de="Karte & Höhenprofil">Karte &
                         Höhenprofil</span><span data-en="Map & Elevation Profile">Map & Elevation Profile</span></h2>
-                <div class="map-container">
-                    <script type="text/javascript"
-                        src="https://www.bad-peterstal-griesbach.de/de/embed/50352383/js?mw=false"></script>
+                <div class="map-container external-embed"
+                    data-external-script="https://www.bad-peterstal-griesbach.de/de/embed/50352383/js?mw=false">
+                    <p><span data-de="Die interaktive Karte wird von der Tourismus-Website Bad Peterstal-Griesbach bereitgestellt. Erst nach Ihrer Zustimmung wird eine Verbindung zu diesem Anbieter hergestellt.">Die interaktive Karte wird von der Tourismus-Website Bad Peterstal-Griesbach bereitgestellt. Erst nach Ihrer Zustimmung wird eine Verbindung zu diesem Anbieter hergestellt.</span><span data-en="The interactive map is provided by the Bad Peterstal-Griesbach tourism website. A connection to this provider is made only after your consent.">The interactive map is provided by the Bad Peterstal-Griesbach tourism website. A connection to this provider is made only after your consent.</span></p>
+                    <button type="button" class="btn" data-load-external><span data-de="Karte laden">Karte laden</span><span data-en="Load map">Load map</span></button>
                 </div>
             </div>
         </section>
@@ -284,7 +274,7 @@
         </div>
     </footer>
 
-    <script src="./src/main.js" type="module"></script>
+    <script src="/src/main.js" type="module"></script>
 </body>
 
 </html>
