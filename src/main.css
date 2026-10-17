@@ -368,13 +368,7 @@ section {
   background: linear-gradient(180deg, #f7f4ee 0%, var(--color-bg-light) 100%);
 }
 
-.floorplan-intro {
-  max-width: 700px;
-  margin: -5px auto 46px;
-  color: var(--color-text-muted);
-  text-align: center;
-  font-size: 1.05rem;
-}
+.floorplan-section .section-title { margin-bottom: 42px; }
 
 .floorplan-card {
   max-width: 920px;
@@ -408,12 +402,14 @@ body.lang-en .floorplan-key > span[data-en] { display: inline-flex; }
 .key-oak { background: #d6d3ce; }
 .key-kitchen { background: #d5b58f; }
 .key-stone { background: #d8d4ca; }
-.floorplan-size { margin-left: auto; color: var(--color-text-muted); font-size: .7rem; letter-spacing: .8px; }
+.floorplan-key .outside-item { color: var(--color-text-muted); }
+.key-outside { background: #f3f1ed; border-style: dashed; }
 
 .floorplan-frame { padding: 18px; background: #eeeae3; }
 .floorplan-svg { display: block; width: 100%; height: auto; max-height: 700px; }
 .floorplan-svg .floor { stroke: none; }
-.floorplan-svg .hall-floor, .floorplan-svg .bath-floor { fill: #e0ded9; }
+.floorplan-svg .hall-floor { fill: #f3f1ed; }
+.floorplan-svg .bath-floor { fill: #e0ded9; }
 .floorplan-svg .corridor-floor { fill: #ece9e2; }
 .floorplan-svg .bedroom-floor { fill: #d6d3ce; }
 .floorplan-svg .kitchen-floor { fill: #d5b58f; }
@@ -448,24 +444,13 @@ body.lang-en .floorplan-key > span[data-en] { display: inline-flex; }
 .floorplan-svg .room-labels { fill: #31423a; font-family: var(--font-body); font-size: 13px; font-weight: 800; letter-spacing: 1.35px; }
 .floorplan-svg .room-labels .corridor-label { font-size: 10px; letter-spacing: .5px; }
 .floorplan-svg .room-labels .bath-label { font-size: 10px; letter-spacing: .5px; }
+.floorplan-svg .room-labels .outside-label { font-size: 10px; letter-spacing: .8px; fill: #6f7972; }
 .floorplan-svg .room-labels .area { font-size: 10px; font-weight: 600; letter-spacing: .5px; }
 .floorplan-svg .dimensions { fill: none; stroke: #758078; stroke-width: 1.5; font-family: var(--font-body); font-size: 11px; font-weight: 700; letter-spacing: .8px; }
 .floorplan-svg .dimensions text { fill: #536158; stroke: none; }
 .floorplan-svg text[data-en] { display: none; }
 body.lang-en .floorplan-svg text[data-de] { display: none; }
 body.lang-en .floorplan-svg text[data-en] { display: inline; }
-
-.floorplan-notes {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 19px 28px 22px;
-  color: var(--color-text-muted);
-  font-size: .84rem;
-}
-.floorplan-notes p { margin: 0; max-width: 540px; }
-.floorplan-notes strong { color: var(--color-primary); }
 
 /* --- Gallery --- */
 
@@ -918,15 +903,11 @@ footer {
     padding: 120px 0 60px;
   }
 
-  .floorplan-intro {
-    margin-bottom: 30px;
-    font-size: 1rem;
-  }
+  .floorplan-section .section-title { margin-bottom: 30px; }
 
   .floorplan-frame { padding: 8px; overflow-x: auto; }
   .floorplan-svg { min-width: 650px; max-height: none; }
   .floorplan-key { padding: 15px 18px; gap: 10px 18px; font-size: .68rem; }
-  .floorplan-notes { align-items: flex-start; flex-direction: column; gap: 10px; padding: 17px 18px 20px; }
   .floorplan-svg .room-labels { font-size: 11px; letter-spacing: .8px; }
   .floorplan-svg .room-labels .area { font-size: 9px; }
   .floorplan-svg .terrace-label { font-size: 10px; letter-spacing: 1.2px; }
