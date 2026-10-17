@@ -137,6 +137,27 @@ header.scrolled .logo {
   font-size: 1.4rem;
 }
 
+@media (max-width: 1350px) {
+  header { padding-left: 4%; padding-right: 4%; }
+  .nav-links { gap: 16px; }
+  .nav-links a { white-space: nowrap; font-size: .68rem; letter-spacing: 1px; }
+  .header-actions .btn { padding: 13px 18px; font-size: .72rem; }
+  .lang-switch { margin-right: 12px; gap: 7px; }
+}
+
+@media (max-width: 1200px) {
+  .nav-links { gap: 10px; }
+  .nav-links a { font-size: .63rem; letter-spacing: .8px; }
+  .header-actions .btn { padding: 12px 14px; font-size: .67rem; }
+  .floorplan-nav { display: none; }
+}
+
+@media (max-width: 1300px) and (min-width: 1101px) {
+  .nav-links .mobile-hide { display: none !important; }
+  .nav-links { gap: 28px; }
+  .nav-links a { font-size: .72rem; }
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -341,6 +362,110 @@ section {
   color: var(--color-secondary);
   margin-bottom: 16px;
 }
+
+/* --- Floor plan --- */
+.floorplan-section {
+  background: linear-gradient(180deg, #f7f4ee 0%, var(--color-bg-light) 100%);
+}
+
+.floorplan-intro {
+  max-width: 700px;
+  margin: -5px auto 46px;
+  color: var(--color-text-muted);
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+.floorplan-card {
+  max-width: 920px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(18, 33, 24, 0.11);
+  border-radius: var(--border-radius-lg);
+  background: #fff;
+  box-shadow: var(--shadow-lg);
+}
+
+.floorplan-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+  align-items: center;
+  padding: 18px 28px;
+  color: var(--color-primary);
+  border-bottom: 1px solid rgba(18, 33, 24, 0.1);
+  background: #fffdf9;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.floorplan-key > span { display: inline-flex; align-items: center; gap: 8px; }
+.floorplan-key > span[data-en] { display: none; }
+body.lang-en .floorplan-key > span[data-en] { display: inline-flex; }
+.key-swatch { width: 15px; height: 15px; display: inline-block; border-radius: 3px; border: 1px solid rgba(18,33,24,.22); }
+.key-oak { background: #d6d3ce; }
+.key-kitchen { background: #d5b58f; }
+.key-stone { background: #d8d4ca; }
+.floorplan-size { margin-left: auto; color: var(--color-text-muted); font-size: .7rem; letter-spacing: .8px; }
+
+.floorplan-frame { padding: 18px; background: #eeeae3; }
+.floorplan-svg { display: block; width: 100%; height: auto; max-height: 700px; }
+.floorplan-svg .floor { stroke: none; }
+.floorplan-svg .hall-floor, .floorplan-svg .bath-floor { fill: #e0ded9; }
+.floorplan-svg .corridor-floor { fill: #ece9e2; }
+.floorplan-svg .bedroom-floor { fill: #d6d3ce; }
+.floorplan-svg .kitchen-floor { fill: #d5b58f; }
+.floorplan-svg .plan-walls { fill: none; stroke: #26332d; stroke-width: 12; stroke-linejoin: miter; stroke-linecap: butt; }
+.floorplan-svg .plan-windows { fill: none; stroke: #d8f0f1; stroke-width: 8; stroke-linecap: butt; }
+.floorplan-svg .plan-doors { fill: none; stroke: #806d5c; stroke-width: 2.5; }
+.floorplan-svg .interior-stairs { fill: none; stroke: #738078; stroke-width: 1.8; }
+.floorplan-svg .interior-stairs .stair-rail { stroke: #55675d; stroke-width: 3; }
+.floorplan-svg .plan-furniture { stroke: #7d6b59; stroke-width: 1.8; }
+.floorplan-svg .bed-headboard { fill: #f2efe8; }
+.floorplan-svg .bed-frame { fill: #b58a5b; }
+.floorplan-svg .bed { fill: #f8f7f2; }
+.floorplan-svg .pillow { fill: #fffdfa; }
+.floorplan-svg .duvet { fill: #68666a; stroke: none; }
+.floorplan-svg .bedside { fill: #a9845f; }
+.floorplan-svg .armchair { fill: #e7dfd0; }
+.floorplan-svg .side-table { fill: #b9c7c3; }
+.floorplan-svg .sideboard { fill: #f5f1e9; }
+.floorplan-svg .kitchen-backsplash { fill: #322a29; stroke: none; }
+.floorplan-svg .kitchen-counter { fill: #9a6842; }
+.floorplan-svg .cabinet-seams { fill: none; stroke: #684b38; stroke-width: 2; }
+.floorplan-svg .tall-cabinet { fill: #f6f3eb; }
+.floorplan-svg .hob { fill: #343838; stroke: #c7c7c2; stroke-width: 1; }
+.floorplan-svg .sink { fill: #c2cbca; }
+.floorplan-svg .oven { fill: #41484a; }
+.floorplan-svg .dining-table { fill: #dbe7e1; }
+.floorplan-svg .chair { fill: #464443; }
+.floorplan-svg .shower { fill: #edf3f3; }
+.floorplan-svg .shower-lines { fill: none; stroke: #afc4c3; stroke-width: 1.5; }
+.floorplan-svg .vanity, .floorplan-svg .toilet, .floorplan-svg .washing-machine { fill: #f7f6f2; }
+.floorplan-svg .basin, .floorplan-svg .machine-door { fill: #c6d4d4; }
+.floorplan-svg .room-labels { fill: #31423a; font-family: var(--font-body); font-size: 13px; font-weight: 800; letter-spacing: 1.35px; }
+.floorplan-svg .room-labels .corridor-label { font-size: 10px; letter-spacing: .5px; }
+.floorplan-svg .room-labels .bath-label { font-size: 10px; letter-spacing: .5px; }
+.floorplan-svg .room-labels .area { font-size: 10px; font-weight: 600; letter-spacing: .5px; }
+.floorplan-svg .dimensions { fill: none; stroke: #758078; stroke-width: 1.5; font-family: var(--font-body); font-size: 11px; font-weight: 700; letter-spacing: .8px; }
+.floorplan-svg .dimensions text { fill: #536158; stroke: none; }
+.floorplan-svg text[data-en] { display: none; }
+body.lang-en .floorplan-svg text[data-de] { display: none; }
+body.lang-en .floorplan-svg text[data-en] { display: inline; }
+
+.floorplan-notes {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 28px 22px;
+  color: var(--color-text-muted);
+  font-size: .84rem;
+}
+.floorplan-notes p { margin: 0; max-width: 540px; }
+.floorplan-notes strong { color: var(--color-primary); }
 
 /* --- Gallery --- */
 
@@ -792,6 +917,19 @@ footer {
   .subpage-hero {
     padding: 120px 0 60px;
   }
+
+  .floorplan-intro {
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+
+  .floorplan-frame { padding: 8px; overflow-x: auto; }
+  .floorplan-svg { min-width: 650px; max-height: none; }
+  .floorplan-key { padding: 15px 18px; gap: 10px 18px; font-size: .68rem; }
+  .floorplan-notes { align-items: flex-start; flex-direction: column; gap: 10px; padding: 17px 18px 20px; }
+  .floorplan-svg .room-labels { font-size: 11px; letter-spacing: .8px; }
+  .floorplan-svg .room-labels .area { font-size: 9px; }
+  .floorplan-svg .terrace-label { font-size: 10px; letter-spacing: 1.2px; }
 }
 
 /* --- Hide Logo on Very Small Screens --- */
